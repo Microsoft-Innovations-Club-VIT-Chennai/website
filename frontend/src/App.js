@@ -16,7 +16,11 @@ class App extends Component{
         options={options}
         />
         <Typing loop={true}>
+<<<<<<< HEAD
         <span>Hey There, We welcome you to Microsoft Innovations Club!</span>
+=======
+        <span>Hey, Welcome to Microsoft Innovations Club!</span>
+>>>>>>> 454034bfeb46a054467d506ae33a07896f06d08b
         <Typing.Backspace count={38} />
         </Typing>
         <div class="container-fluid">
