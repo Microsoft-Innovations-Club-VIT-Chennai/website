@@ -16,7 +16,7 @@ class App extends Component{
         options={options}
         />
         <Typing loop={true}>
-        <span>This span will get typed, then erased.</span>
+        <span>Hey There, We welcome you to Microsoft Innovations Club!</span>
         <Typing.Backspace count={38} />
         </Typing>
         <div class="container-fluid">
