@@ -6,28 +6,32 @@ import NavbarComponent from './components/navbarComponent';
 import options from './components/bodyCanvas.json';
 import Particles from "react-tsparticles";
 import TypingHome from './components/typingScript';
+import Footer from './components/footerComponent'
 class App extends Component{
   render(){
     return(
       <Container fluid id="body-div">
-        <NavbarComponent />
+        <div className="cover">
         <Particles
         id="tsparticles"
         options={options}
         />
-        <div id="page-show" class="container-fluid">
-        <div className="row align-items-center justify-content-center">
+        <NavbarComponent />
+        <div id="page-show" className="row align-items-center justify-content-center">
           <div className="col-lg-4 col-md-6 col-10">
             <img width="100%" height="100%" src="plum.svg"/>
           </div>
           <div className="col-lg-4 col-md-6 col-10 justify-content-center">
             <TypingHome/>
           </div>
-
         </div>
         </div>
         
         
+        
+        <div classNAme="footer container-fluid">
+        <Footer />
+        </div>
         
       </Container>
     );

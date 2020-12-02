@@ -27,7 +27,7 @@ class navbarComponent extends Component{
         return(
         <Navbar id="navbar" width="100%" dark expand="md">
             <NavbarBrand href="/">
-                Microsoft Innovations Club, VIT-C
+                Microsoft Innovations Club
             </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -36,7 +36,7 @@ class navbarComponent extends Component{
                 <NavLink href="/components/">Components</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <NavLink href="https://github.com/Microsoft-Innovations-Club-VIT-Chennai/">GitHub</NavLink>
               </NavItem>
             </Nav>
             <NavbarText>Simple Text</NavbarText>
