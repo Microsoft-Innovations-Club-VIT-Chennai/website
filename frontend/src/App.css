@@ -55,3 +55,17 @@
   z-index: -1;
   position: fixed;
 }
+.typing {
+  color: white;
+  display: inline-block;
+}
+.typing-main {
+  color: red;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.typing-para {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  left: 100px;
+}
