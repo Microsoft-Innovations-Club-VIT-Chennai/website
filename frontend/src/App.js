@@ -26,10 +26,9 @@ class App extends Component{
           </div>
         </div>
         </div>
-        
-        
-        
-        <div classNAme="footer container-fluid">
+        <div className="footer container-fluid">
+        </div>
+        <div className="footer container-fluid">
         <Footer />
         </div>
         
