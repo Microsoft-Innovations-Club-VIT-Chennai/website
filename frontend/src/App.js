@@ -6,7 +6,8 @@ import NavbarComponent from './components/navbarComponent';
 import options from './components/bodyCanvas.json';
 import Particles from "react-tsparticles";
 import TypingHome from './components/typingScript';
-import Footer from './components/footerComponent'
+import Footer from './components/footerComponent';
+import Events from './components/eventComponent.js'
 class App extends Component{
   render(){
     return(
@@ -27,6 +28,7 @@ class App extends Component{
         </div>
         </div>
         <div className="footer container-fluid">
+          <Events />
         </div>
         <div className="footer container-fluid">
         <Footer />
