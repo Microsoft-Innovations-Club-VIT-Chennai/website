@@ -8,6 +8,7 @@ import Particles from "react-tsparticles";
 import TypingHome from './components/typingScript';
 import Footer from './components/footerComponent';
 import Events from './components/eventComponent.js'
+import Spotlight from './components/spotlightComponent.js'
 class App extends Component{
   render(){
     return(
@@ -26,6 +27,10 @@ class App extends Component{
             <TypingHome/>
           </div>
         </div>
+        </div>
+        <div className="footer container">
+          <br/>
+          <Spotlight />
         </div>
         <div className="footer container-fluid">
           <Events />
