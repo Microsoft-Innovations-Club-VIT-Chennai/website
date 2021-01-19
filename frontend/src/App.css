@@ -36,7 +36,21 @@
     transform: rotate(360deg);
   }
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  width: 5px;
+  background-color: black;
+}
 
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: orange;
+}
 #body-div {
   padding-left: 0;
   padding-right: 0;
