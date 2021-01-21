@@ -14,8 +14,17 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-
-- script: |
-    npm install --prefix frontend
-    npm run build --prefix frontend
-  displayName: 'npm install and build'
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: 'frontend'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: 'frontend'
+    customCommand: 'run build'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
