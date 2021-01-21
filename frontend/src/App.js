@@ -9,6 +9,7 @@ import TypingHome from './components/typingScript';
 import Footer from './components/footerComponent';
 import Events from './components/eventComponent.js'
 import Spotlight from './components/spotlightComponent.js'
+import About from './components/aboutComponent.js'
 class App extends Component{
   render(){
     return(
@@ -28,14 +29,17 @@ class App extends Component{
           </div>
         </div>
         </div>
-        <div className="footer container">
+        <div className="container-fluid">
+          <About />
+        </div>
+        <div className="container-fluid">
           <br/>
           <Spotlight />
         </div>
-        <div className="footer container-fluid">
+        <div className="container-fluid">
           <Events />
         </div>
-        <div className="footer container-fluid">
+        <div className="container-fluid">
         <Footer />
         </div>
         

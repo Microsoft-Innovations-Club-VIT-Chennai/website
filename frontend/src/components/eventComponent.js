@@ -53,11 +53,11 @@ export default function RecipeReviewCard() {
 
   return (
     <div className="container-fluid">
-      <br/>
       <div className="row align-items-center justify-content-center">
-        Events
+          <h1 className="display-7 typing-main heading">
+              Events from us
+          </h1>
       </div>
-      <br/>
       <div className="row align-items-center justify-content-center">
         <Card className={classes.root}>
           <CardHeader

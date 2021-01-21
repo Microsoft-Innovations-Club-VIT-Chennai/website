@@ -53,6 +53,11 @@ export default class Spotlight extends Component{
     render(){
         return(
             <div className="container">
+              <div className="row align-items-center justify-content-center">
+                  <h1 className="display-7 typing-main heading">
+                      What's on feed?
+                  </h1>
+              </div>
                 <div className="row align-items-center justify-content-center">
                     <div className="col-xs-10 justify-content-center align-items-center">
                         <MainFeatured post={mainFeaturedPost}/>
