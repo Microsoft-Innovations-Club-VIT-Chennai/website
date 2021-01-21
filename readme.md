@@ -2,7 +2,7 @@
 
 ---
 
-<a href="https://github.com/Microsoft-Innovations-Club-VIT-Chennai/website">Project Repository</a>
+<a href="https://github.com/Microsoft-Innovations-Club-VIT-Chennai/website">Project Repository (under development)</a>
 
 ---
 
