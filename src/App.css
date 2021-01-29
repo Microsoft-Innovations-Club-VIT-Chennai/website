@@ -55,20 +55,27 @@
   padding-left: 0;
   padding-right: 0;
   overflow-x: hidden;
+  
+  
 }
 .cover {
   height: 100vh;
   z-index: 10;
   display: flex;
   flex-flow: column;
+  
 }
 #navbar {
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
+  border: 3px dashed rgb(62, 62, 63)
 }
 #navbar:hover {
   background-color: #343a40;
+  transition-duration: 1.2s;
+  border: 3px solid rgb(211, 0, 0);
 }
+
 #tsparticles {
   height: 100%;
   width: 100%;
