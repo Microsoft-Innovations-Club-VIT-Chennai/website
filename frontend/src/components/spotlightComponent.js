@@ -6,9 +6,10 @@ import Grid from '@material-ui/core/Grid';
 
 const styles = {
     root: {
-       flex: 1,
+       display: 'flex',
        marginTop: 10,
-       oveflow: "scroll"
+       overflow: 'auto'
+
     }
 }
 const mainFeaturedPost = {
@@ -65,7 +66,7 @@ export default class Spotlight extends Component{
                 </div>
                 <br/>
                 <div className="row align-items-center justify-content-center">
-                    <Grid style={styles.root} container spacing={4}>
+                    <Grid style={styles.root} container spacing={6}>
                         {featuredPosts.map((post) => (
                         <Featured key={post.title} post={post} />
                         ))}
