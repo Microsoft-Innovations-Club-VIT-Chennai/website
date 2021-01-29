@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MainFeatured from './mainFeaturedPosts.js';
-import { makeStyles } from '@material-ui/core/styles';
 import Featured from './featuredPosts.js'
 import Grid from '@material-ui/core/Grid';
 
@@ -29,23 +28,10 @@ const featuredPosts = [
         'This is a wider card with supporting text below as a natural lead-in to additional content.',
       image: 'https://source.unsplash.com/random',
       imageText: 'Image Text',
+      link: '#',
+      linkText:'Continue...'
     },
-    {
-        title: 'Featured post',
-        date: 'Nov 12',
-        description:
-          'This is a wider card with supporting text below as a natural lead-in to additional content.',
-        image: 'https://source.unsplash.com/random',
-        imageText: 'Image Text',
-      },
-    {
-      title: 'Post title',
-      date: 'Nov 11',
-      description:
-        'This is a wider card with supporting text below as a natural lead-in to additional content.',
-      image: 'https://source.unsplash.com/random',
-      imageText: 'Image Text',
-    },
+    
   ];
 export default class Spotlight extends Component{
     constructor(){
