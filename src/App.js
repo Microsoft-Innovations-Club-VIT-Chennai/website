@@ -10,7 +10,33 @@ import Footer from './components/footerComponent';
 import Events from './components/eventComponent.js'
 import Spotlight from './components/spotlightComponent.js'
 import About from './components/aboutComponent.js'
+
+function fetchData(){
+  fetch('')
+  .then((response) =>{
+    response.json()
+  })
+  .then((data) =>{
+    return data;
+  })
+  .catch(err=>{
+    alert("Unable to fetch data right now!")
+    return "";
+  })
+}
 class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+      data : ""
+    }
+  }
+  componentDidMount(){
+    var data = fetchData();
+    this.setState({
+      data: data
+    })
+  }
   render(){
     return(
       <Container fluid id="body-div">

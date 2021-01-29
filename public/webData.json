@@ -1,0 +1,40 @@
+{
+    "data" : {
+        "about":{
+            
+        },
+        "featured":{
+            "imageURL": "",
+            "title": "",
+            "desc": "",
+            "link": "",
+            "linkText": ""
+        },
+        "spotlight":{
+            "info": [
+            {
+                "imageURL": "",
+                "title": "",
+                "desc": "",
+                "link": "",
+                "linkText": "",
+                "date": ""
+            }
+        ]
+        },
+        "events":{
+            "info":[
+                {
+                    "avatar": "",
+                    "title": "",
+                    "subheader": "",
+                    "imageURL": "",
+                    "imageTitle": "",
+                    "desc": "",
+                    "MoreHeader": "",
+                    "MoreDetail": ""
+                }
+            ]
+        }
+    }
+}
