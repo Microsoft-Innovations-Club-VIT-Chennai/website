@@ -10,14 +10,6 @@ const styles = {
        overflow: 'auto'
 
     }
-}
-const mainFeaturedPost = {
-    title: 'Microsoft Imagine Cup 2021',
-    description:
-      "IC 2021 is Microsoft's featured hackathon.",
-    image: 'https://source.unsplash.com/random',
-    imgText: 'main image description',
-    linkText: 'Continue reading…',
 };
 
 const featuredPosts = [
@@ -34,10 +26,11 @@ const featuredPosts = [
     
   ];
 export default class Spotlight extends Component{
-    constructor(){
-        super();
-    }
     render(){
+        if(this.props.data){
+            var featured = this.props.data.featured;
+            var spotlight = this.props.data.spotlight;
+        }
         return(
             <div className="container">
               <div className="row align-items-center justify-content-center">
@@ -47,13 +40,13 @@ export default class Spotlight extends Component{
               </div>
                 <div className="row align-items-center justify-content-center">
                     <div className="col-xs-10 justify-content-center align-items-center">
-                        <MainFeatured post={mainFeaturedPost}/>
+                        <MainFeatured post={featured}/>
                     </div>
                 </div>
                 <br/>
                 <div className="row align-items-center justify-content-center">
                     <Grid style={styles.root} container spacing={6}>
-                        {featuredPosts.map((post) => (
+                        {spotlight.info.map((post) => (
                         <Featured key={post.title} post={post} />
                         ))}
                     </Grid>

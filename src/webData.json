@@ -1,0 +1,61 @@
+{
+    "data" : {
+        "about":{
+            "key":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "featured":{
+            "image": "https://source.unsplash.com/random",
+            "imgText": "sample image text",
+            "title": "Microsoft Imagine Cup 2021",
+            "description": "Worldwide hackathon for product development",
+            "link": "https://imaginecup.microsoft.com/",
+            "linkText": "Read More..."
+        },
+        "spotlight":{
+            "info": [
+            {
+                "image": "https://source.unsplash.com/random",
+                "imageText": "something just like this",
+                "title": "Something",
+                "description": "Desc",
+                "link": "#",
+                "linkText": "something",
+                "date": "20 Oct, 2020"
+            },
+            {
+                "image": "https://source.unsplash.com/random",
+                "imageText": "something just like this",
+                "title": "Something",
+                "description": "Desc",
+                "link": "#",
+                "linkText": "something",
+                "date": "20 Oct, 2020"
+            }
+        ]
+        },
+        "events":{
+            "info":[
+                {
+                    "avatar": "E",
+                    "title": "November Notion League",
+                    "subheader": "20th Nov 2020",
+                    "imageURL": "https://source.unsplash.com/random",
+                    "imageTitle": "Image Title",
+                    "desc": "This is a 10 day tech extravaganza full of technical and fun-filled events  ",
+                    "MoreHeader": "Read More",
+                    "MoreDetail": "More info here"
+                },
+                {
+                    "avatar": "",
+                    "title": "",
+                    "subheader": "",
+                    "imageURL": "",
+                    "imageTitle": "",
+                    "desc": "",
+                    "MoreHeader": "",
+                    "MoreDetail": ""
+                }
+            ]
+        }
+    }
+}

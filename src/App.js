@@ -10,32 +10,31 @@ import Footer from './components/footerComponent';
 import Events from './components/eventComponent.js'
 import Spotlight from './components/spotlightComponent.js'
 import About from './components/aboutComponent.js'
+import axios from 'axios';
+import webData from './webData.json';
+var config = {
+  method: 'get',
+  url: 'URL for the webData',
+};
 
-function fetchData(){
-  fetch('')
-  .then((response) =>{
-    response.json()
-  })
-  .then((data) =>{
-    return data;
-  })
-  .catch(err=>{
-    alert("Unable to fetch data right now!")
-    return "";
-  })
-}
 class App extends Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
-      data : ""
-    }
+      webData: webData
+    };
+  }
+  getData(){
+    axios(config)
+    .then(function (response) {
+      this.setState({webData: response.data})
+    })
+    .catch(err =>{
+      this.setState({webData: webData})
+    })
   }
   componentDidMount(){
-    var data = fetchData();
-    this.setState({
-      data: data
-    })
+    this.getData();
   }
   render(){
     return(
@@ -56,14 +55,14 @@ class App extends Component{
         </div>
         </div>
         <div className="container-fluid">
-          <About />
+          <About data={this.state.webData.data} />
         </div>
         <div className="container-fluid">
           <br/>
-          <Spotlight />
+          <Spotlight data={this.state.webData.data} />
         </div>
         <div className="container-fluid">
-          <Events />
+          <Events data={this.state.webData.data} />
         </div>
         <div className="container-fluid">
         <Footer />

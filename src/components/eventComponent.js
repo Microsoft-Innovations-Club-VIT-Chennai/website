@@ -15,6 +15,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import { IParticlesProps } from 'react-tsparticles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,13 +44,73 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function RecipeReviewCard() {
+export default function EventComponent(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+
+  if(props.data){
+    var display = props.data.events.info.map(function(event){
+      return(
+        <div className="col-xs-12 col-md-3">
+          <Card className={classes.root}>
+            <CardHeader
+              avatar={
+                <Avatar aria-label="event" className={classes.avatar}>
+                  {event.avatar}
+                </Avatar>
+              }
+              action={
+                <IconButton aria-label="settings">
+                  <MoreVertIcon />
+                </IconButton>
+              }
+              title={event.title}
+              subheader={event.subheader}
+            />
+            <CardMedia
+              className={classes.media}
+              image={event.imageURL}
+              title={event.title}
+            />
+            <CardContent>
+              <Typography variant="body2" color="textSecondary" component="p">
+                {event.desc}
+              </Typography>
+            </CardContent>
+            <CardActions disableSpacing>
+              <IconButton aria-label="add to favorites">
+                <FavoriteIcon />
+              </IconButton>
+              <IconButton aria-label="share">
+                <ShareIcon />
+              </IconButton>
+              <IconButton
+                className={clsx(classes.expand, {
+                  [classes.expandOpen]: expanded,
+                })}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label="More"
+              >
+                <ExpandMoreIcon />
+              </IconButton>
+            </CardActions>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <CardContent>
+                <Typography paragraph><b>{event.MoreHeader}</b></Typography>
+                <Typography paragraph>
+                  {event.MoreDetail}
+                </Typography>
+              </CardContent>
+            </Collapse>
+          </Card>
+        </div>
+      )
+    })
+  }
 
   return (
     <div className="container-fluid">
@@ -59,58 +120,7 @@ export default function RecipeReviewCard() {
           </h1>
       </div>
       <div className="row align-items-center justify-content-center">
-        <Card className={classes.root}>
-          <CardHeader
-            avatar={
-              <Avatar aria-label="recipe" className={classes.avatar}>
-                S
-              </Avatar>
-            }
-            action={
-              <IconButton aria-label="settings">
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="MIC Club Event-1"
-            subheader="October 30, 2020"
-          />
-          <CardMedia
-            className={classes.media}
-            image="../clublogo.jpeg"
-            title="Rewind 2020"
-          />
-          <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Data of the event details to be fetched from the database
-            </Typography>
-          </CardContent>
-          <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton aria-label="share">
-              <ShareIcon />
-            </IconButton>
-            <IconButton
-              className={clsx(classes.expand, {
-                [classes.expandOpen]: expanded,
-              })}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="show more"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
-          </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph>More Info:</Typography>
-              <Typography paragraph>
-                More info about the event to be fetched from the database and displayed.
-              </Typography>
-            </CardContent>
-          </Collapse>
-        </Card>
+        {display}
       </div>
     </div>
   );
