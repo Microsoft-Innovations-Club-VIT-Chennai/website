@@ -1,23 +1,24 @@
-import React from "react";
+import React,{Component} from "react";
 
-const FooterPagePro = () => {
-  return (
-    <div className="container">
-        <div className="row align-items-center justify-content-center">
-            <h1 className="display-7 typing-main heading">
-                Who are we?
-            </h1>
-        </div>
-        <div className="row align-items-center justify-content-center">
-            <hr
-            style={{
-                color: 'red',
-                backgroundColor: 'red',
-                height: 5
-            }}/>
-        </div>
-    </div>
-  );
+export default class AboutPage extends Component {
+    render(){
+        if(this.props.data){
+            // customize this based on the needs might use images, links, logos etc
+            var data = this.props.data.about.key;
+        }
+        return (
+            <div className="container">
+                <div className="row align-items-center justify-content-center">
+                    <h1 className="display-7 typing-main heading">
+                        Who are we?
+                    </h1>
+                </div>
+                <div className="row align-items-center justify-content-center">
+                    <div className="col-md-6">
+                    {data}
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
-
-export default FooterPagePro;

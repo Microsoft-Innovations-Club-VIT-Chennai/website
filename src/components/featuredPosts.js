@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 
 export default function FeaturedPost(props) {
   const classes = useStyles();
-  const { post } = props;
+  const post = props.post;
 
   return (
     <Grid item xs={12} md={6}>
@@ -53,7 +53,3 @@ export default function FeaturedPost(props) {
     </Grid>
   );
 }
-
-FeaturedPost.propTypes = {
-  post: PropTypes.object,
-};
