@@ -14,7 +14,7 @@ import axios from 'axios';
 import webData from './webData.json';
 var config = {
   method: 'get',
-  url: 'URL for the webData',
+  url: 'id',
 };
 
 class App extends Component{
@@ -25,9 +25,11 @@ class App extends Component{
     };
   }
   getData(){
+    var self=this
     axios(config)
     .then(function (response) {
-      this.setState({webData: response.data})
+      console.log(response.data)
+      self.setState({webData: response.data})
     })
     .catch(err =>{
       this.setState({webData: webData})
