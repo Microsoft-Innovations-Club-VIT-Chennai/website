@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .App {
   text-align: center;
 }
@@ -55,25 +58,18 @@
   padding-left: 0;
   padding-right: 0;
   overflow-x: hidden;
-  
-  
 }
 .cover {
   height: 100vh;
   z-index: 10;
   display: flex;
   flex-flow: column;
-  
 }
 #navbar {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  border: 3px dashed rgb(62, 62, 63)
 }
 #navbar:hover {
   background-color: #343a40;
-  transition-duration: 1.2s;
-  border: 3px solid rgb(211, 0, 0);
 }
 
 #tsparticles {
@@ -105,7 +101,7 @@
 }
 .typing-para {
   background: linear-gradient(87.54deg, #e0f0e8 -6.8%, #fdf9d5 84.14%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Orbitron", sans-serif;
   font-size: 1.5rem;
@@ -114,4 +110,33 @@
   text-shadow: 1.4px 2.3px;
   margin-top: 2.5vh;
   margin-bottom: 2vh;
+}
+
+#spotlight {
+  background: #868585
+    url("https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80")
+    no-repeat center;
+  background-size: cover !important;
+  background-attachment: fixed;
+
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.spotlight-component {
+  margin-bottom: 5vh;
+}
+.event-cards {
+  margin-bottom: 5vh;
+}
+.about-component {
+  margin-bottom: 5vh;
+}
+#footer {
+  background-color: rgb(220, 220, 220);
+}
+.spotlight-header {
+  color: white;
 }

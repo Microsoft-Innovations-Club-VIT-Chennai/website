@@ -54,19 +54,26 @@ class App extends Component{
           </div>
         </div>
         </div>
-        <div className="container-fluid">
-          <About data={this.state.webData.data} />
-        </div>
-        <div className="container-fluid">
-          <br/>
-          <Spotlight data={this.state.webData.data} />
-        </div>
-        <div className="container-fluid">
-          <Events data={this.state.webData.data} />
-        </div>
-        <div className="container-fluid">
-        <Footer />
-        </div>
+        <section id="about">
+          <div className="container-fluid">
+            <About data={this.state.webData.data} />
+          </div>
+        </section>
+        <section id="spotlight">
+          <div className="spotlight container-fluid">
+            <Spotlight data={this.state.webData.data} />
+          </div>
+        </section>
+        <section id="events">
+          <div className="container-fluid">
+            <Events data={this.state.webData.data} />
+          </div>
+        </section>
+        <section id="footer">
+          <div className="container-fluid">
+            <Footer />
+          </div>
+        </section>
         
       </Container>
     );

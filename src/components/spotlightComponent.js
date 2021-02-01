@@ -32,9 +32,9 @@ export default class Spotlight extends Component{
             var spotlight = this.props.data.spotlight;
         }
         return(
-            <div className="container">
+            <div className="spotlight-component container">
               <div className="row align-items-center justify-content-center">
-                  <h1 className="display-7 typing-main heading">
+                  <h1 className="spotlight-header display-7 typing-main heading">
                       What's on feed?
                   </h1>
               </div>

@@ -7,9 +7,9 @@ const FooterPagePro = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Footer Content
-            </h5>
+            <h2 className="display-7 typing-main heading">
+              Get in touch?
+            </h2>
             <p>
               Content about the club, use- bootstrap rows and cols for the content
             </p>
