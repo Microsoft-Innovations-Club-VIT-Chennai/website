@@ -7,7 +7,8 @@ const styles = {
     root: {
        display: 'flex',
        marginTop: 10,
-       overflow: 'auto'
+       overflow: 'auto',
+       flexGrow: 1
 
     }
 };
@@ -44,7 +45,7 @@ export default class Spotlight extends Component{
                     </div>
                 </div>
                 <br/>
-                <div className="row align-items-center justify-content-center">
+                <div className="spotlight-scrollbox row align-items-center justify-content-center">
                     <Grid style={styles.root} container spacing={6}>
                         {spotlight.info.map((post) => (
                         <Featured key={post.title} post={post} />

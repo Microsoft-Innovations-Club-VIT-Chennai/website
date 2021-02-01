@@ -30,6 +30,15 @@
                 "link": "#",
                 "linkText": "something",
                 "date": "20 Oct, 2020"
+            },
+            {
+                "image": "https://source.unsplash.com/random",
+                "imageText": "something just like this",
+                "title": "Something",
+                "description": "Desc",
+                "link": "#",
+                "linkText": "something",
+                "date": "20 Oct, 2020"
             }
         ]
         },
@@ -46,14 +55,44 @@
                     "MoreDetail": "More info here"
                 },
                 {
-                    "avatar": "",
-                    "title": "",
-                    "subheader": "",
-                    "imageURL": "",
-                    "imageTitle": "",
-                    "desc": "",
-                    "MoreHeader": "",
-                    "MoreDetail": ""
+                    "avatar": "E",
+                    "title": "November Notion League",
+                    "subheader": "20th Nov 2020",
+                    "imageURL": "https://source.unsplash.com/random",
+                    "imageTitle": "Image Title",
+                    "desc": "This is a 10 day tech extravaganza full of technical and fun-filled events  ",
+                    "MoreHeader": "Read More",
+                    "MoreDetail": "More info here"
+                },
+                {
+                    "avatar": "E",
+                    "title": "November Notion League",
+                    "subheader": "20th Nov 2020",
+                    "imageURL": "https://source.unsplash.com/random",
+                    "imageTitle": "Image Title",
+                    "desc": "This is a 10 day tech extravaganza full of technical and fun-filled events  ",
+                    "MoreHeader": "Read More",
+                    "MoreDetail": "More info here"
+                },
+                {
+                    "avatar": "E",
+                    "title": "November Notion League",
+                    "subheader": "20th Nov 2020",
+                    "imageURL": "https://source.unsplash.com/random",
+                    "imageTitle": "Image Title",
+                    "desc": "This is a 10 day tech extravaganza full of technical and fun-filled events  ",
+                    "MoreHeader": "Read More",
+                    "MoreDetail": "More info here"
+                },
+                {
+                    "avatar": "E",
+                    "title": "November Notion League",
+                    "subheader": "20th Nov 2020",
+                    "imageURL": "https://source.unsplash.com/random",
+                    "imageTitle": "Image Title",
+                    "desc": "This is a 10 day tech extravaganza full of technical and fun-filled events  ",
+                    "MoreHeader": "Read More",
+                    "MoreDetail": "More info here"
                 }
             ]
         }

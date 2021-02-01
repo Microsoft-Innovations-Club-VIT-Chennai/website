@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 345,
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     '&:hover': {
-      boxShadow: '0 4px 8px 0 rgba(0, 144, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
+      boxShadow: '0 4px 8px 0 rgba(10, 10, 10, 10.2), 0 6px 20px 0 rgba(10, 10, 10, 0.19)'
     }
   },
   media: {
@@ -53,10 +53,10 @@ export default function EventComponent(props) {
   };
 
   if(props.data){
-    var display = props.data.events.info.map(function(event){
+    var display = props.data.events.info.map(function(event,i){
       return(
-        <div className="event-cards col-xs-12 col-md-3">
-          <Card className={classes.root}>
+        <div className="event-cards col-xs-10 col-md-3.5">
+          <Card key={event.avatar} className={classes.root}>
             <CardHeader
               avatar={
                 <Avatar aria-label="event" className={classes.avatar}>
@@ -120,7 +120,7 @@ export default function EventComponent(props) {
               Events from us
           </h1>
       </div>
-      <div className="row align-items-center justify-content-center">
+      <div className="event-scrollbox row">
         {display}
       </div>
     </div>

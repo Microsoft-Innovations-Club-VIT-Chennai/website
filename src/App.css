@@ -128,9 +128,7 @@ html {
 .spotlight-component {
   margin-bottom: 5vh;
 }
-.event-cards {
-  margin-bottom: 5vh;
-}
+
 .about-component {
   margin-bottom: 5vh;
 }
@@ -139,4 +137,41 @@ html {
 }
 .spotlight-header {
   color: white;
+}
+
+.spotlight-scrollbox {
+  max-height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.spotlight-scrollbox::-webkit-scrollbar-thumb {
+  background: #0bf3cc !important;
+  border-radius: 10px !important;
+}
+
+.event-cards {
+  flex: 0 0 auto;
+  margin-right: 8px;
+  margin-bottom: 5vh;
+}
+.event-component > .event-scrollbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.event-scrollbox::-webkit-scrollbar {
+  height: 3px;
+}
+.event-scrollbox::-webkit-scrollbar-track {
+  height: 3px;
+  background-color: rgb(15, 5, 5) !important;
+}
+
+.event-scrollbox::-webkit-scrollbar-thumb {
+  background: rgb(236, 169, 169) !important;
+  border-radius: 10px !important;
+}
+.event-scrollbox::-webkit-scrollbar-thumb:hover {
+  background: orange !important;
 }
