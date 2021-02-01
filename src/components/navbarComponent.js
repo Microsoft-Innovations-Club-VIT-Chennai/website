@@ -33,16 +33,19 @@ class navbarComponent extends Component{
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href="/">About</NavLink>
+                <NavLink href="#about">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">Events</NavLink>
+                <NavLink href="#spotlight">Spotlight</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">Contact</NavLink>
+                <NavLink href="#events">Events</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/Microsoft-Innovations-Club-VIT-Chennai/">GitHub</NavLink>
+                <NavLink href="#footer">Contact</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink target="_blank" href="https://github.com/Microsoft-Innovations-Club-VIT-Chennai/">GitHub</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

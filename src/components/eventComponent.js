@@ -19,6 +19,7 @@ import { IParticlesProps } from 'react-tsparticles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    margin: 3,
     maxWidth: 345,
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     '&:hover': {
@@ -54,7 +55,7 @@ export default function EventComponent(props) {
   if(props.data){
     var display = props.data.events.info.map(function(event){
       return(
-        <div className="col-xs-12 col-md-3">
+        <div className="event-cards col-xs-12 col-md-3">
           <Card className={classes.root}>
             <CardHeader
               avatar={
@@ -113,7 +114,7 @@ export default function EventComponent(props) {
   }
 
   return (
-    <div className="container-fluid">
+    <div className="event-component container-fluid">
       <div className="row align-items-center justify-content-center">
           <h1 className="display-7 typing-main heading">
               Events from us
